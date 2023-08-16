@@ -121,7 +121,7 @@ function markGridWithNearestCoord(grid) {
           notMarked = false
           break
         }
-        console.log({ layer })
+        //console.log({ layer })
         layer++
       }
     }

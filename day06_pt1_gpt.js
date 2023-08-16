@@ -46,6 +46,8 @@ fs.readFile("day06_input.txt", "utf8", (err, data) => {
         calculateManhattanDistance(coord.x, coord.y, x + minX, y + minY)
       )
       const minDistance = Math.min(...distances)
+
+      // what does this reduce do thooo???
       const closestCoords = distances.reduce(
         (acc, dist, idx) => (dist === minDistance ? acc.concat(idx) : acc),
         []
@@ -56,6 +58,7 @@ fs.readFile("day06_input.txt", "utf8", (err, data) => {
         grid[y][x] = closestCoordIdx
         areaMap.set(closestCoordIdx, (areaMap.get(closestCoordIdx) || 0) + 1)
       }
+      console.table(distances)
     }
   }
 
