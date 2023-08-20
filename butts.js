@@ -1,6 +1,11 @@
-butts = {
-  do: "a deer, a female deer",
-  re: "a drop of golden sun",
+let butts = {
+  a: {
+    value: 0,
+  },
+  b: {
+    value: 2,
+  },
 }
-
-console.log(Object.keys(butts).length)
+for (butt in butts) {
+  console.log(butt)
+}
