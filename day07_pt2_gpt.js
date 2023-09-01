@@ -1,6 +1,6 @@
 const fs = require("fs")
 
-fs.readFile("input.txt", "utf8", (err, data) => {
+fs.readFile("day07_input.txt", "utf8", (err, data) => {
   if (err) {
     console.error(err)
     return
@@ -43,7 +43,7 @@ fs.readFile("input.txt", "utf8", (err, data) => {
     workers.some((worker) => worker.step !== "")
   ) {
     availableSteps.sort()
-
+    console.log(workers)
     for (let i = 0; i < numWorkers; i++) {
       if (workers[i].step === "" && availableSteps.length > 0) {
         workers[i].step = availableSteps.shift()
