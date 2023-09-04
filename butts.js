@@ -1,11 +1,21 @@
-function butts() {
-  function innerbutts() {
-    console.log("innerbutts")
-  }
-  innerbutts()
-}
+let butts = [-1, 0]
 
-butts()
+console.log(typeof butts)
+// let butts = [0, 1, 2]
+// if (butts[3]) {
+//   console.log("truthy")
+// } else {
+//   console.log("falsy")
+// }
+
+// function butts() {
+//   function innerbutts() {
+//     console.log("innerbutts")
+//   }
+//   innerbutts()
+// }
+
+// butts()
 // class Butt {
 //   constructor() {
 //     this.innerbutt = []
