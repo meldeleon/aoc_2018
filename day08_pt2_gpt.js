@@ -32,7 +32,7 @@ function calculateNodeValue(numbers, index) {
   }
 }
 
-fs.readFile("day08_input.txt", "utf8", (err, data) => {
+fs.readFile("day08_inputs.txt", "utf8", (err, data) => {
   if (err) {
     console.error(err)
     return
