@@ -1,10 +1,7 @@
-;[
-  { val: "a", prev: null, next: 1 },
-  { val: "b"prev: 0, next: 2 },
-]
+// let map = [["0"],
+// ["1"],
+// ["2"]]
 
+let map = [["0"], ["1"], []]
 
-[
-  { va}
-
-]
+console.log(map[2][0])

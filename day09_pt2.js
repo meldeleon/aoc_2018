@@ -7,6 +7,7 @@ const game_parameters = {
   players: parseInt(input[0]),
   last_marble: parseInt(input[6]),
 }
+
 console.log(game_parameters)
 
 let game_state = {
@@ -18,6 +19,7 @@ function addMarble(marble) {
   // the new index is + 2, but looped around the edge with modulo
   let insert_index =
     (game_state.current_marble_index + 2) % game_state.circle.length
+  // if edge case of 0
   if (insert_index === 0) {
     game_state.circle.push(marble)
     game_state.current_marble_index = game_state.circle.length - 1
