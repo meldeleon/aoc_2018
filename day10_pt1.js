@@ -1,5 +1,3 @@
-const { captureRejectionSymbol } = require("events")
-
 const input = require("fs")
   .readFileSync("day10_input.txt")
   .toString()
